@@ -16,12 +16,13 @@ public class TestWebPage {
     }
 
 
-    @FindBy(xpath = "//a[contains(text(),'Маркет')]")
+    @FindBy(xpath = "//span/input")
     private WebElement someButton;
 
 
     public TestWebPage goToSomeWhere() {
         someButton.click();
+        someButton.sendKeys("test");
         return this;
     }
 

@@ -32,7 +32,7 @@ public class ApplicationManager {
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     wd.get(properties.getProperty("web.baseUrl"));
     wd.manage().window().maximize();
-    webPage = new TestWebPage();
+    webPage = new TestWebPage(wd);
     }
 
     public void stop(){

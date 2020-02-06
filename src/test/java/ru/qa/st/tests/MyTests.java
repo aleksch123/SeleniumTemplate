@@ -13,6 +13,8 @@ public class MyTests extends TestBase{
 
     public void someTest(){
 
+        app.webPage().goToSomeWhere();
+
 
     }
 }
